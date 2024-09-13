@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		408137C95D35881D2C9EC844 /* Pods_RCQuicKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47DF991EFCEA2EE3C67782DF /* Pods_RCQuicKit_Example.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -21,9 +20,10 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
-		660C374C5579440D032B4314 /* Pods_RCQuicKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 565D4C1B509FD4B157069315 /* Pods_RCQuicKit_Tests.framework */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		A4731BEC5F0781960DDB0E61 /* libPods-RCQuicKit_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 57AED55ED8310D6D26980C9E /* libPods-RCQuicKit_Tests.a */; };
+		D00C38CD7FA1D545233FE9E2 /* libPods-RCQuicKit_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 488E2E2323AC41BF98C7CCCA /* libPods-RCQuicKit_Example.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,11 +37,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0C594CBAD1F5FB6230153EFF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		0C594CBAD1F5FB6230153EFF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		1D66A88BDCD9F3B636FC8E9B /* Pods-RCQuicKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RCQuicKit_Tests.debug.xcconfig"; path = "Target Support Files/Pods-RCQuicKit_Tests/Pods-RCQuicKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		47DF991EFCEA2EE3C67782DF /* Pods_RCQuicKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RCQuicKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		565D4C1B509FD4B157069315 /* Pods_RCQuicKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RCQuicKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		488E2E2323AC41BF98C7CCCA /* libPods-RCQuicKit_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RCQuicKit_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5752D653607FDFC12B27E0F7 /* Pods-RCQuicKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RCQuicKit_Example.debug.xcconfig"; path = "Target Support Files/Pods-RCQuicKit_Example/Pods-RCQuicKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		57AED55ED8310D6D26980C9E /* libPods-RCQuicKit_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RCQuicKit_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* RCQuicKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RCQuicKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -65,8 +65,8 @@
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8E7A30DF6D02B068B7960FF0 /* Pods-RCQuicKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RCQuicKit_Tests.release.xcconfig"; path = "Target Support Files/Pods-RCQuicKit_Tests/Pods-RCQuicKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		A04527C3D9284F331AC2AFCC /* Pods-RCQuicKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RCQuicKit_Example.release.xcconfig"; path = "Target Support Files/Pods-RCQuicKit_Example/Pods-RCQuicKit_Example.release.xcconfig"; sourceTree = "<group>"; };
-		AD5ACE3AA9D6FA5A4F6D955D /* RCQuicKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = RCQuicKit.podspec; path = ../RCQuicKit.podspec; sourceTree = "<group>"; };
-		BF1DF04E0B903009E75E8C60 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		AD5ACE3AA9D6FA5A4F6D955D /* RCQuicKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = RCQuicKit.podspec; path = ../RCQuicKit.podspec; sourceTree = "<group>"; };
+		BF1DF04E0B903009E75E8C60 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +77,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				408137C95D35881D2C9EC844 /* Pods_RCQuicKit_Example.framework in Frameworks */,
+				D00C38CD7FA1D545233FE9E2 /* libPods-RCQuicKit_Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,7 +88,7 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				660C374C5579440D032B4314 /* Pods_RCQuicKit_Tests.framework in Frameworks */,
+				A4731BEC5F0781960DDB0E61 /* libPods-RCQuicKit_Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,7 +103,6 @@
 				1D66A88BDCD9F3B636FC8E9B /* Pods-RCQuicKit_Tests.debug.xcconfig */,
 				8E7A30DF6D02B068B7960FF0 /* Pods-RCQuicKit_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -135,8 +134,8 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				47DF991EFCEA2EE3C67782DF /* Pods_RCQuicKit_Example.framework */,
-				565D4C1B509FD4B157069315 /* Pods_RCQuicKit_Tests.framework */,
+				488E2E2323AC41BF98C7CCCA /* libPods-RCQuicKit_Example.a */,
+				57AED55ED8310D6D26980C9E /* libPods-RCQuicKit_Tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -208,7 +207,7 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				5F75B31C4736BDDBDD58F081 /* [CP] Embed Pods Frameworks */,
+				663549B438A4A484EC41BBED /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -248,6 +247,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = rencheng;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = RJ3HT64AS6;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -258,6 +260,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -317,18 +320,18 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		5F75B31C4736BDDBDD58F081 /* [CP] Embed Pods Frameworks */ = {
+		663549B438A4A484EC41BBED /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-RCQuicKit_Example/Pods-RCQuicKit_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/RCQuicKit/RCQuicKit.framework",
+				"${PODS_ROOT}/Cronet/Frameworks/Cronet.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RCQuicKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cronet.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -494,6 +497,7 @@
 			baseConfigurationReference = 5752D653607FDFC12B27E0F7 /* Pods-RCQuicKit_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RJ3HT64AS6;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RCQuicKit/RCQuicKit-Prefix.pch";
 				INFOPLIST_FILE = "RCQuicKit/RCQuicKit-Info.plist";
@@ -510,6 +514,7 @@
 			baseConfigurationReference = A04527C3D9284F331AC2AFCC /* Pods-RCQuicKit_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RJ3HT64AS6;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RCQuicKit/RCQuicKit-Prefix.pch";
 				INFOPLIST_FILE = "RCQuicKit/RCQuicKit-Info.plist";

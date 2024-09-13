@@ -1,0 +1,6 @@
+framework module RCQuicKit {
+  umbrella header "RCQuicKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

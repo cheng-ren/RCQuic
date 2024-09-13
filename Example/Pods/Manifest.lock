@@ -1,0 +1,27 @@
+PODS:
+  - Cronet (87.0.4280.60)
+  - OpenSSL-Universal (1.0.1.j-2)
+  - RCQuicKit (0.1.0):
+    - OpenSSL-Universal (= 1.0.1.j-2)
+
+DEPENDENCIES:
+  - Cronet
+  - RCQuicKit (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - Cronet
+    - OpenSSL-Universal
+
+EXTERNAL SOURCES:
+  RCQuicKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Cronet: 10093df403efaac6cfde7bf34e882a615223b52f
+  OpenSSL-Universal: 438433f1eaa4f7fbc787445c2e520c522ef0f024
+  RCQuicKit: f9e4d5fe68135d17a73b9329b254960f28059777
+
+PODFILE CHECKSUM: ec4a82d24576e7b1a08e5ee400a8116e0007c395
+
+COCOAPODS: 1.15.2

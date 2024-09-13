@@ -1,0 +1,6 @@
+framework module Pods_RCQuicKit_Tests {
+  umbrella header "Pods-RCQuicKit_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

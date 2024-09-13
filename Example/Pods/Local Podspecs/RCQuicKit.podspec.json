@@ -1,0 +1,30 @@
+{
+  "name": "RCQuicKit",
+  "version": "0.1.0",
+  "summary": "基于TQuic封装的OC库",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/rencheng/RCQuicKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "rencheng": "rencheng@yiche.com"
+  },
+  "source": {
+    "git": "https://github.com/rencheng/RCQuicKit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "11.0"
+  },
+  "source_files": "RCQuicKit/**/*{.h,.m}",
+  "public_header_files": "RCQuicKit/**/*.h",
+  "private_header_files": "RCQuicKit/tquic/**/*.h",
+  "vendored_libraries": "RCQuicKit/tquic/**/*.a",
+  "dependencies": {
+    "OpenSSL-Universal": [
+      "1.0.1.j-2"
+    ]
+  }
+}

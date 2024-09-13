@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'RCQuicKit'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of RCQuicKit.'
+  s.summary          = '基于TQuic封装的OC库'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -28,9 +28,13 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/rencheng/RCQuicKit.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '11.0'
 
-  s.source_files = 'RCQuicKit/Classes/**/*'
+  s.source_files = 'RCQuicKit/**/*{.h,.m}'
+  s.public_header_files = 'RCQuicKit/**/*.h'
+  s.private_header_files = 'RCQuicKit/tquic/**/*.h'
+  s.vendored_libraries = 'RCQuicKit/tquic/**/*.a'
+  s.dependency 'OpenSSL-Universal', '1.0.1.j-2'
   
   # s.resource_bundles = {
   #   'RCQuicKit' => ['RCQuicKit/Assets/*.png']

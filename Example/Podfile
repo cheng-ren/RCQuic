@@ -1,13 +1,17 @@
-use_frameworks!
+#use_frameworks!
 
 platform :ios, '10.0'
 
 target 'RCQuicKit_Example' do
   pod 'RCQuicKit', :path => '../'
 
+  pod 'Cronet'
+  
   target 'RCQuicKit_Tests' do
     inherit! :search_paths
 
+  
+  
     
   end
 end
